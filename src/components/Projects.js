@@ -12,11 +12,6 @@ function Projects() {
           border-radius: 12px;
           box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
           font-family: 'Roboto', sans-serif;
-          transition: all 0.3s ease;
-        }
-
-        .projects-container:hover {
-          box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
         }
 
         .projects-title {
@@ -25,13 +20,8 @@ function Projects() {
           color: #0d6efd;
           text-align: center;
           margin-bottom: 2rem;
-          letter-spacing: 1px;
           text-transform: uppercase;
           animation: fadeIn 1s ease-out;
-        }
-
-        .projects-title:hover {
-          color: #004aad;
         }
 
         .project-item {
@@ -41,18 +31,13 @@ function Projects() {
           border-left: 5px solid #0d6efd;
           border-radius: 8px;
           box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-          transition: all 0.3s ease;
-        }
-
-        .project-item:hover {
-          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
         }
 
         .project-title {
           font-size: 1.4rem;
           color: #333;
           font-weight: 600;
-          margin-bottom: 0.8rem;
+          margin-bottom: 0.5rem;
         }
 
         .project-description {
@@ -62,16 +47,24 @@ function Projects() {
           margin-bottom: 1rem;
         }
 
-        .project-link {
-          font-size: 1rem;
-          font-weight: 600;
-          color: #0d6efd;
-          text-decoration: none;
-          transition: color 0.3s ease;
+        .tech-stack {
+          margin-top: 0.5rem;
         }
 
-        .project-link:hover {
-          color: #004aad;
+        .badge {
+          display: inline-block;
+          background-color: #0d6efd;
+          color: white;
+          font-size: 0.85rem;
+          padding: 0.4rem 0.8rem;
+          border-radius: 30px;
+          margin: 0.25rem 0.25rem 0 0;
+          font-weight: 500;
+          transition: background-color 0.3s ease;
+        }
+
+        .badge:hover {
+          background-color: #004aad;
         }
 
         @keyframes fadeIn {
@@ -102,26 +95,70 @@ function Projects() {
 
       <div className="projects-container">
         <h2 className="projects-title">My Projects</h2>
-        
+
         <div className="project-item">
-          <h5 className="project-title">Project 1: Portfolio Website</h5>
+          <h5 className="project-title">Portfolio Website</h5>
           <p className="project-description">
-            Built using React and Bootstrap. Showcases my personal background and projects. A responsive and interactive portfolio that highlights my skills and work.
+            A responsive React portfolio showcasing my skills, background, and projects.
           </p>
+          <div className="tech-stack">
+            <span className="badge">React</span>
+            <span className="badge">Bootstrap</span>
+            <span className="badge">HTML</span>
+            <span className="badge">CSS</span>
+          </div>
         </div>
 
         <div className="project-item">
-          <h5 className="project-title">Project 2: Ecommerce App</h5>
+          <h5 className="project-title">Ecommerce App</h5>
           <p className="project-description">
-            A simple ecommerce app using React and Laravel, with local storage support. It helps users to show their products in a sleek interface.
+            An ecommerce platform built using React and Laravel, allowing users to browse and display products.
           </p>
-        </div>  
+          <div className="tech-stack">
+            <span className="badge">React</span>
+            <span className="badge">Laravel</span>
+            <span className="badge">PHP</span>
+            <span className="badge">MySQL</span>
+          </div>
+        </div>
 
         <div className="project-item">
-          <h5 className="project-title">Project 3: Task Management</h5>
+          <h5 className="project-title">Task Management App</h5>
           <p className="project-description">
-            A task management app using React and Laravel, with local storage support. It helps users to add, edit, and delete tasks in a sleek interface.
+            A productivity app for managing tasks. Features add, edit, delete functionalities with persistence.
           </p>
+          <div className="tech-stack">
+            <span className="badge">React</span>
+            <span className="badge">Laravel</span>
+            <span className="badge">Local Storage</span>
+          </div>
+        </div>
+
+        <div className="project-item">
+          <h5 className="project-title">Electronic Medical Records</h5>
+          <p className="project-description">
+            A secure system for storing and managing patient health records in clinics or hospitals.
+          </p>
+          <div className="tech-stack">
+            <span className="badge">React</span>
+            <span className="badge">Laravel</span>
+            <span className="badge">Express</span>
+            <span className="badge">MySQL</span>
+          </div>
+        </div>
+
+        <div className="project-item">
+          <h5 className="project-title">Inventory Management System</h5>
+          <p className="project-description">
+            A full-featured system to track inventory levels, orders, and deliveries in real time.
+          </p>
+          <div className="tech-stack">
+            <span className="badge">PHP</span>
+            <span className="badge">MySQL</span>
+            <span className="badge">JavaScript</span>
+            <span className="badge">HTML</span>
+            <span className="badge">CSS</span>
+          </div>
         </div>
       </div>
     </>

@@ -95,7 +95,7 @@ function Home() {
         <p className="home-description">
           This is a simple React website showcasing my background, education, projects, and contact information.
           <br />
-          Feel free to explore the sections above to learn more about <span>Your Name</span>.
+          Feel free to explore the sections above to learn more about <span>Fren Sua D. Yutrago</span>.
         </p>
         <a href="projects">
           <button className="cta-button">Explore My Work</button>
